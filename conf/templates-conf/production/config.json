@@ -1,0 +1,6 @@
+{
+  "imagePath": "assets/images/",
+  "templateImagePath": "assets/template-images/",
+  "buildEnv": "production",
+  "baseUrl": "https://customer.kyberosc.com"
+}

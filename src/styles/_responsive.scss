@@ -1,0 +1,17 @@
+@media #{$media-screen-mobile} {
+  .is-hidden-mobile {
+    display: none !important;
+  }
+}
+
+@media #{$media-screen-tablet} {
+  .is-hidden-tablet-only {
+    display: none !important;
+  }
+}
+
+@media #{$media-lg} {
+  .is-hidden-desktop {
+    display: none !important;
+  }
+}

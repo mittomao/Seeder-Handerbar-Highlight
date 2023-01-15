@@ -1,0 +1,6 @@
+{
+  "imagePath": "assets/images/",
+  "templateImagePath": "assets/template-images/",
+  "buildEnv": "staging",
+  "baseUrl": "https://staging.customer.kyberosc.com"
+}

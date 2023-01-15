@@ -1,0 +1,58 @@
+{
+  "name": "wainii-dev",
+  "version": "1.0.0",
+  "description": "Pantas Site",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp dev",
+    "build": "gulp build",
+    "build:staging": "gulp build --env=staging",
+    "build:content": "gulp build --env=content-staging",
+    "build:backend": "gulp compile",
+    "eslint": "eslint ./src --ignore-path .eslintignore",
+    "eslint:fix": "eslint ./src --ignore-path .eslintignore --fix",
+    "sasslint": "sass-lint ./src/styles/**/*.scss -v -q"
+  },
+  "keywords": [
+    "nodejs",
+    "handlebars",
+    "hapi"
+  ],
+  "author": "KyberOSC",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-transform-runtime": "^7.5.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/register": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "eslint": "4.14.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "handlebars-layouts": "^3.1.4",
+    "handlebars-utils": "^1.0.6",
+    "minimist": "^1.2.0",
+    "sass-lint": "^1.13.1",
+    "webpack": "^4.40.1",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.2.0",
+    "bezier-easing": "^2.1.0",
+    "bootstrap": "^4.1.3",
+    "crypto-js": "^3.1.9-1",
+    "jquery": "^3.3.1",
+    "jquery.cookie": "^1.4.1",
+    "packery": "^2.1.2",
+    "slick-carousel": "^1.8.1",
+    "webshim": "^1.16.0"
+  }
+}

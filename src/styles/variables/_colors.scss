@@ -1,0 +1,31 @@
+$color-primary: #1F5388;
+$color-secondary: #00af9a;
+
+$color-white:    #fff !default;
+$color-gray-100: #f3f3f3 !default;
+$color-gray-200: #e9ecef !default;
+$color-gray-300: #dee2e6 !default;
+$color-gray-400: #ced4da !default;
+$color-gray-500: #b3b3b3 !default;
+$color-gray-600: #6c757d !default;
+$color-gray-700: #454545 !default;
+$color-gray-800: #393939 !default;
+$color-gray-900: #212529 !default;
+$color-black:    #000 !default;
+
+$color-transparent:       rgba(255, 255, 255, 0);
+$color-text-base:         #333333;
+$background-base:         #EDF8FE;
+$background-footer:         #0E2A46;
+$background-button:         #037DC5;
+$color-bg-button-hover:   linear-gradient(to top right, #138EE2, #09D8B0);;
+$color-box-shadow:        rgba(0, 0, 0 , 0.15);
+$color-bg-tile: linear-gradient(to right, #015C58,#008374);
+$color-yellow : #FF9F00;
+
+$theme-colors: (
+  "primary": $color-primary,
+  "secondary": $color-secondary,
+  "white": $color-white
+);
+

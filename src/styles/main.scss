@@ -1,0 +1,28 @@
+@import 'config'; /* environment config */
+@import './variables/colors';
+@import './variables/fonts';
+@import './variables/responsive';
+@import './variables/spacings';
+@import './variables/override-variables';
+
+@import './colors';
+@import './variables';
+@import './override-variables';
+@import './bootstrap';
+@import './slick';
+@import './mixin';
+@import './icons';
+@import './fonts';
+@import './common';
+@import './elements';
+@import './responsive';
+@import './reset';
+@import './spacing';
+
+@import "slick";
+
+@import './components/header.scss';
+@import './components/footer.scss';
+@import './components/hero-banner';
+
+@import './pages/index';

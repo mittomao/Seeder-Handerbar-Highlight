@@ -1,0 +1,180 @@
+// container
+.container {
+  @media #{$media-small-desktop} {
+    max-width: $container-max-width;
+  }
+
+  @media #{$media-screen-mobile} {
+    max-width: 100%;
+  }
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+// text utilities
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-left {
+  justify-content: flex-start;
+}
+
+.flex-right {
+  justify-content: flex-end;
+}
+
+.flex-middle {
+  align-items: center;
+}
+
+// transform class using with element position not static
+.transform-middle {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.transform-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.transform-mc {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mb-component {
+  margin-bottom: 2rem;
+
+  @media #{$media-md} {
+    margin-bottom: 3rem;
+  }
+}
+
+.mb-component-lg {
+  margin-bottom: 2.5rem;
+
+  @media #{$media-md} {
+    margin-bottom: 4rem;
+  }
+}
+
+.custom-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-item-fullfill {
+  flex: 1 0 auto;
+}
+
+.small,
+small {
+  font-size: 80%;
+}
+
+.text-ellipsis {
+  white-space: normal;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+}
+
+.hidden-scroll {
+  overflow: hidden;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-semi-bold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.btn {
+  font-size: $fs-5;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 14px 25px;
+
+  &-primary {
+    border: 1px solid $bittersweet;
+    background-color: $bittersweet;
+
+    &:is(:hover, :focus) {
+      $background: $salmon;
+      $border-color: $salmon;
+    }
+  }
+
+  &-secondary {
+    $background: transparent;
+    border: 1px solid black;
+    $color: $black;
+
+    &:is(:hover, :focus) {
+      $background: hsla(0, 0%, 0%, 0.1);
+    }
+  }
+
+  &-link {
+    border-bottom: 1px solid $white;
+    color: $white;
+  }
+}
+
+@keyframes menuAnimation {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0;
+  }
+}

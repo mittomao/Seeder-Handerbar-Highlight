@@ -1,0 +1,78 @@
+.no-m {
+  margin: 0;
+}
+
+.no-tm {
+  margin-top: 0;
+}
+
+.no-bm {
+  margin-bottom: 0;
+}
+
+.no-p {
+  padding: 0;
+}
+
+.no-lp {
+  padding-left: 0;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a { text-decoration: none; }
+
+a,
+img,
+table,
+tbody,
+button,
+ion-icon { display: block; }
+
+button,
+input {
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+input { width: 100%; }
+
+button { cursor: pointer; }
+
+address {
+  font-style: normal;
+  line-height: 1.8;
+}
+
+html {
+  font-family: var(--ff-josefin-sans);
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--white);
+  font-size: 1.6rem;
+  padding-block-start: 90px;
+}
+
+::-webkit-scrollbar { width: 10px; }
+
+::-webkit-scrollbar-track { background: hsl(0, 0%, 95%); }
+
+::-webkit-scrollbar-thumb { background: hsl(0, 0%, 80%); }
+
+::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }

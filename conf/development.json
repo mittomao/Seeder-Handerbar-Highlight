@@ -1,0 +1,53 @@
+{
+  "buildFolders": {
+    "contentsPaths": [
+      "./contents/**/*"
+    ],
+    "stylesPaths": [
+      "./src/styles/**/*"
+    ],
+    "scriptsPaths": [
+      "./src/scripts/**/*"
+    ],
+    "assetsPaths": [
+      "./src/assets/**/*"
+    ],
+    "htmlPaths": [
+      "./src/layouts/**/*",
+      "./src/pages/**/*",
+      "./src/templates/**/*"
+    ],
+    "partialsPaths": [
+      "./src/templates"
+    ],
+    "layoutsPath": "./src/layouts",
+    "pagesPath": "./src/pages/**/*"
+  },
+  "pagesBasePath": "./src/pages",
+  "outputFolders": {
+    "distPath": "./dist/",
+    "sitecorePath": "../../",
+    "tmpPath": "./.tmp/"
+  },
+  "base": {
+    "scripts": [
+      "node_modules/jquery/dist/jquery.min.js"
+    ]
+  },
+  "vendors": {
+    "scripts": [
+      "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "node_modules/slick-carousel/slick/slick.min.js",
+      "node_modules/crypto-js/crypto-js.js",
+      "node_modules/packery/dist/packery.pkgd.js",
+      "node_modules/bezier-easing/dist/bezier-easing.min.js",
+      "node_modules/jquery.cookie/jquery.cookie.js"
+    ],
+    "fonts": [
+      "node_modules/slick-carousel/slick/fonts/**/*"
+    ],
+    "statics": [
+      "node_modules/slick-carousel/slick/ajax-loader.gif"
+    ]
+  }
+}

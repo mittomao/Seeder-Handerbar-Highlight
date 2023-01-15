@@ -1,0 +1,31 @@
+.mb-component {
+  margin-bottom: 2rem;
+
+  @media #{$media-md} {
+    margin-bottom: 3rem;
+  }
+}
+
+.mb-component-lg {
+  margin-bottom: 2.5rem;
+
+  @media #{$media-md} {
+    margin-bottom: 4rem;
+  }
+}
+
+.pt-component{
+  padding-top: 2.5rem;
+
+  @media #{$media-md} {
+    padding-top: 4rem;
+  }
+}
+
+.pb-component{
+  padding-bottom: 2.5rem;
+
+  @media #{$media-md} {
+    padding-bottom: 4rem;
+  }
+}

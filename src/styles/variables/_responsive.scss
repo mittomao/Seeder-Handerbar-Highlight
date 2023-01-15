@@ -1,0 +1,42 @@
+// break points
+$break-point-375: 375px;
+$break-point-576: 576px;
+$break-point-768: 768px;
+$break-point-992: 992px;
+$break-point-1024: 1024px;
+$break-point-1200: 1200px;
+$break-point-1440: 1440px;
+
+$media-screen-mobile-small: '(max-width: #{$break-point-375 - 1})';
+$media-screen-mobile-normal: '(max-width: #{$break-point-576 - 1})';
+$media-screen-mobile: '(max-width: #{$break-point-768 - 1})';
+$media-screen-tablet: '(min-width: #{$break-point-768}) and (max-width: #{$break-point-992 - 1})';
+$media-screen-desktop: '(min-width: #{$break-point-992}) and (max-width: #{$break-point-1200 - 1})';
+$media-not-desktop: '(max-width: #{$break-point-992 - 1})';
+$media-screen-tablet-desktop: '(min-width: #{$break-point-768}) and (max-width: #{$break-point-1200 - 1})';
+$media-small-desktop: '(min-width: #{$break-point-1200})';
+$media-large-desktop: '(min-width: #{$break-point-1440})';
+
+$media-xs: '(max-width: #{$break-point-576 - 1})';
+$media-sm: '(min-width: #{$break-point-576})';
+$media-md: '(min-width: #{$break-point-768})';
+$media-lg: '(min-width: #{$break-point-992})';
+$media-xl: '(min-width: #{$break-point-1024})';
+$media-xxl: '(min-width: #{$break-point-1200})';
+
+//layout variables
+$min-vw: 360px;
+$max-vw: 1440px;
+$grid-gutter-width: 30px;
+$container-max-width: $max-vw;
+$component-height-masthead: 500px;
+
+$component-top: 1rem;
+$component-bottom: 2rem;
+
+//z-index
+$z-index-toplest: 9999;
+$z-index-1: 1;
+$z-index-2: 2;
+$z-index-10: 10;
+

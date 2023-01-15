@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url($font-path + 'Montserrat/Montserrat-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url($font-path + 'Montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url($font-path + 'Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url($font-path + 'Montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@mixin textStyle-d36-m24 {
+  font-size: 36px;
+  line-height: 1.16;
+  font-family: $font-objectSans-regular;
+
+  @media #{$media-screen-mobile} {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@mixin textStyle-p {
+  font-size: 18px;
+  line-height: 1.44;
+  font-family: $font-objectSans-light;
+
+  @media #{$media-screen-mobile} {
+    font-size: 16px;
+    line-height: 1.375;
+  }
+}
+
+$ff-roboto: 'Roboto', sans-serif;
+$ff-josefin-sans: 'Josefin Sans', sans-serif;

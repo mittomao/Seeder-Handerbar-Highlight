@@ -1,0 +1,416 @@
+*, body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-logo {
+    img {
+        height: 80px;
+        width: auto;
+        object-fit: cover;
+    }
+}
+
+main {
+    min-height: 500px;
+    text-align: center;
+
+    section {
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 575px) {
+    /**
+     * CUSTOM PROPERTY
+     */
+
+    :root {
+        /**
+       * typography
+       */
+
+        $fs-1: 4rem;
+    }
+
+    .has-scrollbar>li {
+        min-width: calc(50% - 12.5px);
+    }
+
+    /**
+     * HERO
+     */
+
+    .hero-text {
+        font-size: $fs-7;
+    }
+
+    /**
+     * PRODUCTS
+     */
+
+    .product-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /**
+     * CTA
+     */
+
+    .cta-card {
+        text-align: left;
+    }
+
+    .cta-card .card-title {
+        max-width: 14ch;
+    }
+
+    .cta-card .btn-link {
+        margin-inline: 0;
+    }
+
+    /**
+     * INSTA POST
+     */
+
+    .insta-post-list .insta-post-item {
+        min-width: 25%;
+    }
+
+    /**
+     * FOOTER
+     */
+
+    .footer-brand .logo {
+        margin-bottom: 0;
+    }
+
+    .footer-brand {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-link-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+}
+
+/**
+   * responsive for larger than 768px screen
+   */
+
+@media (min-width: 768px) {
+
+    /**
+     * CUSTOM PROPERTY
+     */
+    /**
+     * REUSED STYLE
+     */
+    .h4 {
+        $fs-5: 2rem;
+    }
+
+    /**
+     * SPECIAL
+     */
+
+    .special-banner .banner-title {
+        $fs-4: 2.2rem;
+    }
+
+    .special-product .has-scrollbar>li {
+        min-width: 100%;
+    }
+
+    .special .container {
+        display: flex;
+        gap: 25px;
+    }
+
+    .special .section-title {
+        margin-block-start: 0;
+    }
+
+    .special-banner,
+    .special-product {
+        min-width: calc(50% - 12.5px);
+    }
+
+    .special-banner {
+        height: auto;
+    }
+
+    /**
+     * INSTA POST
+     */
+
+    .insta-post-list .insta-post-item {
+        min-width: 20%;
+    }
+
+    /**
+     * GO TOP
+     */
+
+    .go-top-btn {
+        padding: 15px;
+        border-width: 6px;
+        bottom: 30px;
+        right: 30px;
+    }
+}
+
+/**
+   * responsive for larger than 992px screen
+   */
+
+@media (min-width: 992px) {
+    /**
+     * CUSTOM PROPERTY
+     */
+
+    :root {
+        /**
+       * typography
+       */
+
+        $fs-3: 2.4rem;
+    }
+
+    /**
+     * REUSED STYLE
+     */
+
+    .has-scrollbar>li {
+        min-width: calc(33.33% - 16.66px);
+    }
+
+    /**
+     * HEADER
+     */
+
+    .nav-open-btn,
+    .nav-close-btn,
+    .navbar .logo,
+    .nav-action-text,
+    .overlay {
+        display: none;
+    }
+
+    .navbar,
+    .navbar-list,
+    .nav-action-list {
+        all: unset;
+    }
+
+    .navbar-item:not(:last-child) {
+        border: none;
+    }
+
+    .navbar-list,
+    .nav-action-list {
+        display: flex;
+    }
+
+    .nav-action-list {
+        gap: 20px;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .navbar-list {
+        margin-inline: auto;
+        gap: 35px;
+    }
+
+    .navbar-link {
+        font-family: $ff-roboto;
+        font-weight: $fw-500;
+    }
+
+    .nav-action-list>li:first-child {
+        display: block;
+    }
+
+    .nav-action-btn {
+        position: relative;
+    }
+
+    .nav-action-badge ion-icon {
+        $ionicon-stroke-width: 30px;
+    }
+
+    .nav-action-badge {
+        position: absolute;
+        top: 5px;
+        right: -12px;
+    }
+
+    /**
+     * HERO
+     */
+
+    .hero {
+        height: 480px;
+    }
+
+    /**
+     * PRODUCTS
+     */
+
+    .product-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /**
+     * CTA
+     */
+
+    .cta-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .cta-card {
+        padding-inline: 50px;
+    }
+
+    /**
+     * SPECIAL
+     */
+
+    .special-banner {
+        min-width: calc(33.33% - 25px);
+    }
+
+    .special-product {
+        min-width: 66.66%;
+    }
+
+    .special-product .has-scrollbar>li {
+        min-width: calc(50% - 12.5px);
+    }
+
+    /**
+     * INSTA POST
+     */
+
+    .insta-post-list .insta-post-item {
+        min-width: 16.666%;
+    }
+}
+
+/**
+   * responsive for larger than 1200px screen
+   */
+
+@media (min-width: 1200px) {
+    /**
+     * CUSTOM PROPERTY
+     */
+
+    :root {
+        /**
+       * typography
+       */
+
+        $fs-1: 5rem;
+        $fs-2: 3.6rem;
+    }
+
+    /**
+     * REUSED STYLE
+     */
+
+    /**
+     * HERO
+     */
+
+    .hero {
+        height: 580px;
+    }
+
+    .hero .container {
+        max-width: 1000px;
+    }
+
+    .hero-text {
+        font-size: $fs-6;
+        max-width: 50ch;
+    }
+
+    /**
+     * PRODUCTS
+     */
+
+    .product-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /**
+     * SPECIAL
+     */
+
+    .special-banner {
+        min-width: calc(25% - 25px);
+    }
+
+    .special-product .has-scrollbar>li {
+        min-width: calc(33.33% - 16.66px);
+    }
+
+    .special-banner .banner-title {
+        $fs-4: 2.4rem;
+    }
+
+    /**
+     * SERVICE
+     */
+
+    .service-item {
+        width: 275px;
+    }
+
+    .service-card .card-icon {
+        min-width: 70px;
+        height: 70px;
+    }
+
+    .service-card .card-title {
+        $fs-6: 2rem;
+    }
+
+    /**
+     * INSTA POST
+     */
+
+    .insta-post {
+        padding-block-end: 0;
+    }
+
+    .insta-post-list .insta-post-item {
+        min-width: 12.5%;
+    }
+
+    .insta-post-list {
+        padding-bottom: 0;
+    }
+
+    /**
+     * FOOTER
+     */
+
+    .footer-link-box {
+        grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+        gap: 50px;
+    }
+}
